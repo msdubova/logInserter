@@ -1,11 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"goroutine/log"
+	"goroutine/batch"
+	"goroutine/inserter"
 )
 
 func main() {
-	fmt.Println(log.NewLog())
 
+	var ins = batch.NewInserter(batch.Inserter{})
+
+	inserter.GenerateAndInsertLogs(ins)
 }

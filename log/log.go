@@ -7,7 +7,7 @@ type Log struct {
 	Value string
 }
 
-func NewLog() Log {
+func NewLog(id string) Log {
 	const letters = "olgadubova"
 
 	var s string
